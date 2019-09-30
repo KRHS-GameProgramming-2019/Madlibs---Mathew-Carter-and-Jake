@@ -42,7 +42,7 @@ def getWord(prompt, debug = False):
         if isSwear(word, debug):    
             goodInput = False
             print ("Don't use language like that")
-        elif word.lower() not in sports
+        elif word.lower() not in sports:
             goodInput = False
             print ("Sorry, I don't know that one.")
             
@@ -71,5 +71,7 @@ def isSwear(word, debug = False):
 
 
 swearList = ["crap",
-             "piss"
+             "piss",
+             "shit",
+             "fuck"
 ]
