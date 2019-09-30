@@ -1,3 +1,6 @@
+#Writen by Jake Paul Hubbard
+#          Carter Trybulski
+
 from Screens import *
 from Getters import *
 from Story1 import *

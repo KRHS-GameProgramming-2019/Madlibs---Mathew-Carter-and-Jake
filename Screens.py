@@ -15,7 +15,7 @@ def TitleScreen(debug = False):
     s += "|                                                                                      |\n"
     s += "|                                  Jake Paul Hubbard                                   |\n"
     s += "|                                                                                      |\n"
-    s += "|                                                                                      |\n"
+    s += "|                                  Carter Trybulski                                    |\n"
     s += "|                                                                                      |\n"
     s += "-----------------------------------------------------------------------------------------\n"
     
