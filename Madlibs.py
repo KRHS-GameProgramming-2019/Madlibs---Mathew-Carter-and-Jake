@@ -1,3 +1,6 @@
+# Written by Jake Hubbard
+#            Jake Hubbard
+
 from Screens import *
 from Getters import *
 from Story1 import *
