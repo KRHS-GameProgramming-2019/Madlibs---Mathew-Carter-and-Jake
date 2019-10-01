@@ -34,7 +34,7 @@ def getWord(prompt, debug = False):
     sports = ["soccer",
               "football",
               "hockey",
-              "wrestling"]
+              "wrestling",]
     
     while not goodInput:
         word = input(prompt)
