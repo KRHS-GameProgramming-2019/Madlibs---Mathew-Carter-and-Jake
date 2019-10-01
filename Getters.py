@@ -34,7 +34,17 @@ def getWord(prompt, debug = False):
     sports = ["soccer",
               "football",
               "hockey",
-              "wrestling",]
+              "wrestling",
+              "rugby",
+              "chess",
+              "esports",
+              "ultimate",
+                            ]
+                            
+    names = ["Matt",
+             "Jake",
+             "Chris"
+                        ] 
     
     while not goodInput:
         word = input(prompt)
@@ -45,23 +55,12 @@ def getWord(prompt, debug = False):
         elif word.lower() not in sports:
             goodInput = False
             print ("Sorry, I don't know that one.")
-            
+        elif not in names:
+             print ("they are not in this class")
+        
             
     return word
 
-def getSport(prompt, debug = False):
-    if debug: print("getSport Function")
-
-    goodInput = False
-    
-    while not goodInput:
-        word = input(prompt)
-        goodInput = True
-        if isSwear(word, debug):    
-            goodInput = False
-            print ("Don't use language like that")
-            
-    return word
 def isSwear(word, debug = False):    
     if debug: print("isSwear Function")
     if word.lower() in swearList:
@@ -73,5 +72,7 @@ def isSwear(word, debug = False):
 swearList = ["crap",
              "piss",
              "shit",
-             "fuck"
+             "fuck",
+             "pussy"
+             
 ]
