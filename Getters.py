@@ -30,8 +30,21 @@ def getWord(prompt, debug = False):
     if debug: print("getWord Function")
 
     goodInput = False
-    
-    sports = ["soccer",
+    names = ["Matt",
+             "Jake",
+             "Chris"
+      while not goodInput:
+      
+        goodInput =False
+        if isSwear(word,debug):
+            goodInput= False
+            print ("Don't use language like that")
+     `  else goodInput = True
+                        ] 
+def getSport(prompt,debug = False
+    while not goodInput:
+        word = input(prompt)
+         sports = ["soccer",
               "football",
               "hockey",
               "wrestling",
@@ -39,28 +52,33 @@ def getWord(prompt, debug = False):
               "chess",
               "esports",
               "ultimate",
-                            ]
-                            
-    names = ["Matt",
-             "Jake",
-             "Chris"
-                        ] 
-    
-    while not goodInput:
-        word = input(prompt)
-        goodInput = True
+        goodInput = False
         if isSwear(word, debug):    
             goodInput = False
             print ("Don't use language like that")
-        elif word.lower() not in sports:
+        elif not in sports
             goodInput = False
-            print ("Sorry, I don't know that one.")
-        elif not in names:
-             print ("they are not in this class")
-        
-            
+            print("I don't know that one") 
+        else goodInput= True
     return word
-
+    
+def getNoun(promt,debug):
+    word=input()
+    properNoun = ["Matt",
+                  "Chris",
+                  "Jake"
+                            ]
+    while not goodInput:
+        goodInput =False
+        if isSwear(word,debug):
+            goodInput= False
+            print ("Don't use language like that")
+        elif in properNoun:
+            goodInput = False\
+            print ("that is a proper noun")
+    return word
+            
+            
 def isSwear(word, debug = False):    
     if debug: print("isSwear Function")
     if word.lower() in swearList:
