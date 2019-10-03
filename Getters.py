@@ -44,10 +44,8 @@ def getWord(prompt, debug = False):
         if isSwear(word, debug):    
             goodInput = False
             print ("Don't use language like that")
-        elif word.lower() not in sports:
-            goodInput = False
-            print ("Sorry, I don't know that one.")
-        elif not in names:
+        
+        elif word.lower() not in names:
              print ("they are not in this class")
         
             
@@ -73,6 +71,9 @@ def getSport(prompt, debug = False):
         if isSwear(word, debug):    
             goodInput = False
             print ("Don't use language like that")
+        elif word.lower() not in sports:
+            goodInput = False
+            print ("Sorry, I don't know that one.")
             
     return word
 def isSwear(word, debug = False):    
