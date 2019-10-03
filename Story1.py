@@ -4,15 +4,16 @@ def Story1(debug = False):
     if debug: print("Story1 Function")
 
     print("\n")
-    friendName1 = getWord("Enter a name: ", debug)
-    sport1 = getSport("Enter a Sport: ", debug)
-
-    
+    Name1 = getWord("Enter a name: ", debug)
+    sport1 = getWord("Enter a Sport: ", debug)
+    Noun1 = getWord("Enter a Noun") 
+    Noun2 = getWord("Enter another Noun")
     out = "\n"
-    out += " One day me and my friend, " + friendName1
+    out += "One day me and my friend, " + Name1
     out += " were out playing " + sport1
-    out += " when suddenly we saw" + friendName2
-    
-
-    
+    out +="then we saw a " + Noun1
+    out +=" it was very " + ad1
+    out +=" then my favorite " + Noun2 + "walked out"
     return out
+
+print(Story1())
