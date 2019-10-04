@@ -33,8 +33,7 @@ def getWord(prompt, debug = False):
     names = ["Matt",
              "Jake",
              "Chris"
-      while not goodInput:
-      
+    while not goodInput:
         goodInput =False
         if isSwear(word,debug):
             goodInput= False
