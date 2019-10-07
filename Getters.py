@@ -28,13 +28,29 @@ def getMenuOption(debug = False):
 
 def getWord(prompt, debug = False):
     if debug: print("getWord Function")
-
+    word = input(promt)
     goodInput = False
     
-    sports = ["soccer",
-              "football",
-              "hockey",
-              "wrestling"]
+    while not goodInput:
+        goodInput =False
+        if isSwear(word,debug):
+            goodInput= False
+            print ("Don't use language like that")
+        else: 
+            goodInput= True
+    return word
+
+def getSport(prompt,debug = False
+         
+    sports= ("soccer",
+            "football",
+            "hockey",
+            "wrestling",
+            "rugby",
+            "chess",
+            "esports",
+            "ultimate",
+                            )
     
     while not goodInput:
         word = input(prompt)
@@ -46,21 +62,6 @@ def getWord(prompt, debug = False):
             goodInput = False
             print ("Sorry, I don't know that one.")
             
-            
-    return word
-
-def getSport(prompt, debug = False):
-    if debug: print("getSport Function")
-
-    goodInput = False
-    
-    while not goodInput:
-        word = input(prompt)
-        goodInput = True
-        if isSwear(word, debug):    
-            goodInput = False
-            print ("Don't use language like that")
-            
     return word
 def isSwear(word, debug = False):    
     if debug: print("isSwear Function")
@@ -71,5 +72,34 @@ def isSwear(word, debug = False):
 
 
 swearList = ["crap",
-             "piss"
+             "piss,"
+             "ass",
+             "bitch",
+             "fuck",
+             "whore",
+             "hoe",
+             "slut",
+             "fucker",
+             "shit",
+             "nig",
+             "nigger",
+             "nigga",
+             "cunt",
+             "retard",
+             "degenerate",
+             "bitchass",
+             "retard",
+             "hore",
+             "downie",
+             "dick",
+             "cock",
+             "blackie",
+             "vagina",
+             "sex",
+             "motherfucker",
+             "pussy",
+             "s'wit",
+             "n'wah"
+             
+        
 ]

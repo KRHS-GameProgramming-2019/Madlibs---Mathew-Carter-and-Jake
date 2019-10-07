@@ -1,3 +1,7 @@
+#Writen by Jake Paul Hubbard
+#          Carter Trybulski
+#          Matthew Churchwell
+
 from Screens import *
 from Getters import *
 from Story1 import *
@@ -13,7 +17,7 @@ def Madlibs(debug = False):
     
     while not done:
         print (MainMenu(debug))
-        choice = getMenuOption(debug)
+        choice = getMenuOption()
         
         if choice == "q":
             exit();
