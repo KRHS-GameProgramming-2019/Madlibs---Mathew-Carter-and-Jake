@@ -28,17 +28,16 @@ def getMenuOption(debug = False):
 
 def getWord(prompt, debug = False):
     if debug: print("getWord Function")
-
+    word = input(promt)
     goodInput = False
-    names = ["Matt",
-             "Jake",
-             "Chris"
+    
     while not goodInput:
         goodInput =False
         if isSwear(word,debug):
             goodInput= False
             print ("Don't use language like that")
-     `  else goodInput = True
+        else goodInput = True
+     return word
                         ] 
 def getSport(prompt,debug = False
     while not goodInput:
@@ -51,33 +50,19 @@ def getSport(prompt,debug = False
               "chess",
               "esports",
               "ultimate",
-        goodInput = False
+                            ]
+    
+    while not goodInput:
+        word = input(prompt)
+        goodInput = True
         if isSwear(word, debug):    
             goodInput = False
             print ("Don't use language like that")
-        elif not in sports
+        elif word.lower() not in sports:
             goodInput = False
-            print("I don't know that one") 
-        else goodInput= True
-    return word
-    
-def getNoun(promt,debug):
-    word=input()
-    properNoun = ["Matt",
-                  "Chris",
-                  "Jake"
-                            ]
-    while not goodInput:
-        goodInput =False
-        if isSwear(word,debug):
-            goodInput= False
-            print ("Don't use language like that")
-        elif in properNoun:
-            goodInput = False\
-            print ("that is a proper noun")
-    return word
+            print ("Sorry, I don't know that one.")
             
-            
+    return word
 def isSwear(word, debug = False):    
     if debug: print("isSwear Function")
     if word.lower() in swearList:
@@ -87,9 +72,32 @@ def isSwear(word, debug = False):
 
 
 swearList = ["crap",
-             "piss",
-             "shit",
+             "piss,"
+             "ass",
+             "bitch",
              "fuck",
+             "whore",
+             "hoe",
+             "slut",
+             "fucker",
+             "shit",
+             "nig",
+             "nigger",
+             "nigga",
+             "cunt",
+             "retard",
+             "degenerate",
+             "bitchass",
+             "retard",
+             "hore",
+             "downie",
+             "dick",
+             "cock",
+             "blackie",
+             "vagina",
+             "sex",
+             "motherfucker",
              "pussy"
              
+        
 ]

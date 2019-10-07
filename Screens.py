@@ -12,12 +12,12 @@ def TitleScreen(debug = False):
     s += "|                                By                                                    |\n"
     s += "|                                                                                      |\n"
     s += "|                                                                                      |\n"
-    s += "|                                  Matthew Churchwell&                                 |\n"
-    s += "|                                  Jake Paul Hubbard                                   |\n"
+    s += "|                                  Matthew Churchwell &                                |\n"
+    s += "|                                  Jake Paul Hubbard &                                 |\n"
+    s += "|                                  Carter Trybulski                                    |\n"
     s += "|                                                                                      |\n"
     s += "|                                                                                      |\n"
-    s += "|                                                                                      |\n"
-    s += "-----------------------------------------------------------------------------------------\n"
+    s += "----------------------------------------------------------------------------------------\n"
     
     
     return s
@@ -46,3 +46,5 @@ def MainMenu(debug = False):
     
     
     return s
+
+
