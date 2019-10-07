@@ -36,21 +36,21 @@ def getWord(prompt, debug = False):
         if isSwear(word,debug):
             goodInput= False
             print ("Don't use language like that")
-        else goodInput = True
-     return word
-                        ] 
+        else: 
+            goodInput= True
+    return word
+
 def getSport(prompt,debug = False
-    while not goodInput:
-        word = input(prompt)
-         sports = ["soccer",
-              "football",
-              "hockey",
-              "wrestling",
-              "rugby",
-              "chess",
-              "esports",
-              "ultimate",
-                            ]
+         
+    sports= ("soccer",
+            "football",
+            "hockey",
+            "wrestling",
+            "rugby",
+            "chess",
+            "esports",
+            "ultimate",
+                            )
     
     while not goodInput:
         word = input(prompt)
@@ -97,7 +97,9 @@ swearList = ["crap",
              "vagina",
              "sex",
              "motherfucker",
-             "pussy"
+             "pussy",
+             "s'wit",
+             "n'wah"
              
         
 ]
