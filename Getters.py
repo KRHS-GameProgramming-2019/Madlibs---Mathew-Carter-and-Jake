@@ -36,6 +36,7 @@ def getWord(prompt, debug = False):
         if isSwear(word,debug):
             goodInput= False
             print ("Don't use language like that")
+            exit()
         else: 
             goodInput= True
     return word
@@ -58,6 +59,7 @@ def getSport(prompt,debug = False):
         if isSwear(word, debug):    
             goodInput = False
             print ("Don't use language like that")
+            exit()
         elif word.lower() not in sports:
             goodInput = False
             print ("Sorry, I don't know that one.")
@@ -65,6 +67,28 @@ def getSport(prompt,debug = False):
             goodInput = True
             
     return word
+    
+def getFood (prompt,debug):
+    word = input(prompt)
+    goodInput = False
+    Food= ["bacon",
+           "pizza",
+           "pasta",
+           "burgers",
+           "eggs"
+                        ]
+    while not goodInput:
+        if isSwear(word,debug):
+            goodInput= False
+            print ("Don't use language like that")
+            exit()
+        elif word=="Food":
+            print("you have succeeded in mooing")
+            goodInput=True
+        elif word.lower() not in Food:
+            print("I have not heard of that before")
+            goodInput=True
+            
 def isSwear(word, debug = False):    
     if debug: print("isSwear Function")
     if word.lower() in swearList:
