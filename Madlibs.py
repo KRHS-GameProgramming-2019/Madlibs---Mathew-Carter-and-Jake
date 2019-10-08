@@ -29,4 +29,4 @@ def Madlibs(debug = False):
 
 
 
-Madlibs(True)
+Madlibs(False)

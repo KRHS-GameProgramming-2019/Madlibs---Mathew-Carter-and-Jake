@@ -6,18 +6,18 @@ def getMenuOption(debug = False):
     while not goodInput:
         option = input("please select an option: ")
         option = option.lower()
-        
-        if {option == "q" or 
+        goodInput=False
+        if(option == "q" or 
             option == "quit" or
             option == "x" or 
-            option == "exit"}:
+            option == "exit"):
                 option = "q"
                 goodInput = True
                 
-        elif {option == "1" or 
+        elif (option == "1" or 
             option == "one" or
             option == "story 1" or 
-            option == "story1"}:
+            option == "story1"):
                 option = "1"
                 goodInput = True
         
@@ -28,7 +28,7 @@ def getMenuOption(debug = False):
 
 def getWord(prompt, debug = False):
     if debug: print("getWord Function")
-    word = input(promt)
+    word = input(prompt)
     goodInput = False
     
     while not goodInput:
@@ -40,9 +40,9 @@ def getWord(prompt, debug = False):
             goodInput= True
     return word
 
-def getSport(prompt,debug = False
-         
-    sports= ("soccer",
+def getSport(prompt,debug = False):
+    
+    sports= ["soccer",
             "football",
             "hockey",
             "wrestling",
@@ -50,17 +50,19 @@ def getSport(prompt,debug = False
             "chess",
             "esports",
             "ultimate",
-                            )
-    
+                            ]
+    goodInput=False
     while not goodInput:
         word = input(prompt)
-        goodInput = True
+        goodInput = False
         if isSwear(word, debug):    
             goodInput = False
             print ("Don't use language like that")
         elif word.lower() not in sports:
             goodInput = False
             print ("Sorry, I don't know that one.")
+        else:
+            goodInput = True
             
     return word
 def isSwear(word, debug = False):    

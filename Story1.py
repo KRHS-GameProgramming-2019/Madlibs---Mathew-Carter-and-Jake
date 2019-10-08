@@ -19,4 +19,3 @@ def Story1(debug = False):
     out +=" it began to " +Verb1 +" " 
     return out
 
-print(Story1())
