@@ -20,6 +20,12 @@ def getMenuOption(debug = False):
             option == "story1"):
                 option = "1"
                 goodInput = True
+                
+        elif (option == "3" or
+            option == "three" or
+            option == "story 3"):
+                option = "3"
+                goodInput = True
         
         else:
             print("Please make a valid choice")
@@ -68,7 +74,8 @@ def getSport(prompt,debug = False):
             
     return word
     
-def getFood (prompt,debug):
+def getFood (prompt,debug=False):
+    if debug: Print("you are in debug")
     word = input(prompt)
     goodInput = False
     Food= ["bacon",
@@ -88,6 +95,7 @@ def getFood (prompt,debug):
         elif word.lower() not in Food:
             print("I have not heard of that before")
             goodInput=True
+    return word
             
 def isSwear(word, debug = False):    
     if debug: print("isSwear Function")
