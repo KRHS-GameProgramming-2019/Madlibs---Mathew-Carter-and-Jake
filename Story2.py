@@ -14,6 +14,8 @@ def Story2(debug = False):
     activityName1 = getWord("Enter in an activity: ", debug)
     activityName2 = getWord("Enter in a second activity: ", debug)
     activityName3 = getWord("Enter in a third activity: ", debug)
+    curseWord1 = getWord("Enter in the worst curse word you know or say: ", debug)
+    randomWord1 = getWord("Enter a random word: ", debug)
 
     out = "/n"
     out += "There was a cat named, " + animalName1
@@ -27,4 +29,5 @@ def Story2(debug = False):
     out += "The town is in the state of, " + stateName1
     out += "He lives alone in a one story house all to himself and with his cat, " + animalName1
     out += "During his days off, he does various activities throughout his day, such as, " + activityName1 + "," activityName2 ", and, " + activityName3
-    
+    out += "He also goes out during the night doing, ", + curseWord1 + " things with his friends."
+    out += "This is a story of a cat and a man, who are, " + randomWord1 + " together."

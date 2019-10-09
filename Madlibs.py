@@ -1,4 +1,4 @@
-#Writen by Jake Paul Hubbard
+#Written by Jake Hubbard
 #          Carter Trybulski
 #          Matthew Churchwell
 
