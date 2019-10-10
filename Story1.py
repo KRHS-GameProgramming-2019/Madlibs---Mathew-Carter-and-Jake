@@ -18,17 +18,17 @@ def Story1(debug = False):
     out +=" then we saw a " + Noun1
     out +=" it was very " + ad1
     out +=" then my favorite " + Noun2 + "walked out"
-    out +=" it began to " + Verb1 +" " 
+    out +=" it began to " + Verb1 + " " 
 =======
     Food1 = getFood("Enter a food: ")
     out = "\n"
     out += "One day me and my friend, " + Name1
     out += " were out playing " + sport1
-    out +=" then we saw a " + Noun1 +","
-    out +=" it was very " + ad1 +"."
+    out +=" then we saw a " + Noun1 + ","
+    out +=" it was very " + ad1 + "."
     out +=" then my favorite " + Noun2 + " walked out"
-    out +=" it began to " +Verb1 +" " 
-    out +="then we ate some " +Food1
+    out +=" it began to " + Verb1 + " " 
+    out +="then we ate some " + Food1
 >>>>>>> origin/master
     return out
 
