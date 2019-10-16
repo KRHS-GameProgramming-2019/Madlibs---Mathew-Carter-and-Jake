@@ -31,3 +31,5 @@ def Story2(debug = False):
     out += "During his days off, he does various activities throughout his day, such as, " + activity1 + "," activity2 ", and, " + activity3
     out += "He also goes out during the night doing, ", + curseWord1 + " things with his friends."
     out += "This is a story of a cat and a man, who are, " + randomWord1 + " together."
+
+    return out
