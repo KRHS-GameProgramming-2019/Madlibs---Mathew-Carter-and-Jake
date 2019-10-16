@@ -10,8 +10,8 @@ def Story1(debug = False):
     Noun2 = getWord("Enter another Noun: ")
     ad1 = getWord("Enter an Adjective: ")
     Verb1 = getWord("Enter a Verb: ")
-<<<<<<< HEAD
-   
+    Food1 = Food("Enter a food: ")
+
     out = "\n"
     out += "One day me and my friend, " + Name1
     out += " were out playing " + sport1
